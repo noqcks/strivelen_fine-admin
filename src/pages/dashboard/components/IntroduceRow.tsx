@@ -72,7 +72,7 @@ const IntroduceRow = ({
         }
         contentHeight={46}
       >
-        import { TinyArea } from '@ant-design/plots';
+        // import { TinyArea } from '@ant-design/plots';
       </ChartCard>
     </Col>
     <Col {...topColResponsiveProps}>
