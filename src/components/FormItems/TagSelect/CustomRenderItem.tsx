@@ -47,7 +47,7 @@ function computeTextColor({ isSelected, disabled, themeToken }: ItemBoxProps) {
 const ItemBox = styled.span`
   user-select: none;
   padding: 2px 6px;
-  line-height: ${(props: { themeToken: { lineHeight: string; }; }) => props.themeToken.lineHeight};
+  line-height: ${(props) => props.themeToken.lineHeight};
   transition: color ${(props) => props.themeToken.motionDurationSlow};
   cursor: ${(props) => (props.disabled ? 'not-allowed' : 'pointer')};
   color: ${(props) =>
