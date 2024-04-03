@@ -108,7 +108,7 @@ export default function BottomCards({ loading }: BottomCardsProps) {
         style: {
           fontSize: '32px'
         },
-        customHtml: (container, view, datum, data = []) => {
+        customHtml: (container: HTMLElement, view: any, datum: any, data: any[] = []) => {
           const { width } = container.getBoundingClientRect();
           const text = datum
             ? `¥ ${datum.value}`
