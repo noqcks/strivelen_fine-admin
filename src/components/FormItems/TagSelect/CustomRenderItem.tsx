@@ -15,7 +15,7 @@ export default function CustomRenderItem({
   const { token } = useToken();
   return (
     <ItemBox
-      disabled={disabled}
+      aria-disabled={disabled}
       isSelected={isSelected}
       themeToken={token}
       onClick={() => {
