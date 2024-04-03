@@ -17,7 +17,7 @@ export default function CustomRenderItem({
     <ItemBox
       aria-disabled={disabled}
       data-selected={isSelected}
-      themeToken={token}
+      data-theme-token={token}
       onClick={() => {
         if (disabled) return;
         onClick();
