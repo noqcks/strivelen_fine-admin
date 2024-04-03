@@ -174,7 +174,7 @@ export default function BottomCards({ loading }: BottomCardsProps) {
     radius: 0.8,
     innerRadius: 0.2,
     tooltip: {
-      formatter: (datum) => {
+      formatter: (datum: { star: number }) => {
         return {
           name: 'star数',
           value: datum.star
