@@ -44,7 +44,19 @@ function computeTextColor({ isSelected, disabled, themeToken }: ItemBoxProps) {
   return themeToken.colorTextBase;
 }
 
-const ItemBox = styled.span`
+import styled from 'styled-components';
+
+interface ItemBoxProps {
+  disabled?: boolean;
+  isSelected?: boolean;
+  themeToken: {
+    lineHeight: string;
+    motionDurationSlow: string;
+    colorPrimaryHover: string;
+  };
+}
+
+const ItemBox = styled.span<ItemBoxProps>`
   user-select: none;
   padding: 2px 6px;
   line-height: ${(props) => props.themeToken.lineHeight};
@@ -57,7 +69,7 @@ const ItemBox = styled.span`
       themeToken: props.themeToken
     })};
   &:hover {
-    color: ${(props: ItemBoxProps) => {
+    color: ${(props) => {
       if (props.disabled) return;
       return props.themeToken.colorPrimaryHover;
     }};
