@@ -182,7 +182,7 @@ export default function BottomCards({ loading }: BottomCardsProps) {
       }
     },
     colorField: 'star',
-    color: ({ star }) => {
+    color: ({ star }: { star: number }) => {
       if (star > 10000) {
         return '#36c361';
       } else if (star > 1000) {
