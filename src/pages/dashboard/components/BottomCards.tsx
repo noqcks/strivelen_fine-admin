@@ -94,7 +94,7 @@ export default function BottomCards({ loading }: BottomCardsProps) {
     statistic: {
       title: {
         offsetY: -4,
-        customHtml: (container: HTMLElement, view, datum) => {
+        customHtml: (container: HTMLElement, view: any, datum) => {
           const { width, height } = container.getBoundingClientRect();
           const d = Math.sqrt(Math.pow(width / 2, 2) + Math.pow(height / 2, 2));
           const text = datum ? datum.type : '总计';
