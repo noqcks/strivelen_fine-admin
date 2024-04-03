@@ -1,5 +1,5 @@
 import Icon from '@/components/Icons';
-import { TinyArea, TinyColumn, Bullet } from '@ant-design/plots';
+import { TinyColumn, Bullet } from '@ant-design/plots';
 import { Col, Row, Tooltip } from 'antd';
 import CountUp from 'react-countup';
 
