@@ -72,20 +72,7 @@ const IntroduceRow = ({
         }
         contentHeight={46}
       >
-        <TinyArea
-          color="#975FE4"
-          height={46}
-          autoFit={true}
-          smooth
-          data={visitData.map((i) => i.y)}
-          tooltip={{
-            customContent: (x: string | number, data: any) => {
-              return `日期：${visitData[Number(x)].x} 数量：${
-                data[0]?.data?.y
-              }`;
-            }
-          }}
-        />
+        import { TinyArea } from '@ant-design/plots';
       </ChartCard>
     </Col>
     <Col {...topColResponsiveProps}>
