@@ -79,7 +79,7 @@ export default function BottomCards({ loading }: BottomCardsProps) {
     innerRadius: 0.64,
     meta: {
       value: {
-        formatter: (v) => `${v} ¥`
+        formatter: (v: number) => `${v} ¥`
       }
     },
     label: {
