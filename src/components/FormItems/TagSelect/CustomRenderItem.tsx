@@ -1,5 +1,5 @@
 import { theme } from 'antd';
-import styled from 'styled-components-v5';
+import styled from 'styled-components';
 import type { GlobalToken } from 'antd/es/theme/interface';
 import type { RenderItemArgs } from './index';
 
