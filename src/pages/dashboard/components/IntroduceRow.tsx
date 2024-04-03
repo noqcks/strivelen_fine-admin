@@ -79,7 +79,7 @@ const IntroduceRow = ({
           smooth
           data={visitData.map((i) => i.y)}
           tooltip={{
-            customContent: (x, data) => {
+            customContent: (x: string | number, data: any) => {
               return `日期：${visitData[Number(x)].x} 数量：${
                 data[0]?.data?.y
               }`;
